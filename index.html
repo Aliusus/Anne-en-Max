@@ -587,7 +587,7 @@ function applyFilters() {
       map.removeLayer(markers[i]);
     }
   });
-  status.textContent = `${visible.length} filiaal${visible.length === 1 ? '' : 'en'} zichtbaar`;
+  status.textContent = `${visible.length} filial${visible.length === 1 ? '' : 'en'} zichtbaar`;
   if (visible.length) {
     map.fitBounds(
       L.featureGroup(visible).getBounds().pad(.10),
